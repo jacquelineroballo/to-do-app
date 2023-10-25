@@ -1,0 +1,21 @@
+//Variables
+$bg-gradient: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+
+//Mixins
+@mixin card {
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:
+        20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+
+@mixin transition {
+    transition: all 0.18s ease;
+    /* transition:
+        color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out,
+        -webkit-box-shadow 0.15s ease-in-out; */
+}

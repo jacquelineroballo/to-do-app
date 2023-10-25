@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap");
+
+@mixin font-title {
+    @font-face {
+        font-family: "Starguides";
+        src: url(fonts/Starguides.eot);
+        src:
+            url(fonts/Starguides.eot?#iefix) format("embedded-opentype"),
+            url(fonts/Starguides.woff) format("woff"),
+            url(fonts/Starguides.ttf) format("truetype"),
+            url(fonts/Starguides.svg) format("svg");
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+$font-primary: "Starguides";
+$font-secondary: "Delius Unicase", cursive;
