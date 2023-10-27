@@ -3,8 +3,10 @@
 @mixin font-title {
     @font-face {
         font-family: "Starguides";
-        src: url(fonts/Starguides.eot);
+        src: url(fonts/Starguides.otf);
         src:
+            local("Starguides"),
+            url(fonts/Starguides.eot),
             url(fonts/Starguides.eot?#iefix) format("embedded-opentype"),
             url(fonts/Starguides.woff) format("woff"),
             url(fonts/Starguides.woff2) format("woff2"),

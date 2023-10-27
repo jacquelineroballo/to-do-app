@@ -19,3 +19,12 @@ $bg-gradient: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
         box-shadow 0.15s ease-in-out,
         -webkit-box-shadow 0.15s ease-in-out; */
 }
+
+@mixin degrade-border {
+    height: 70px;
+    border: double 3px transparent;
+    border-radius: 25px;
+    background-image: linear-gradient(white, white), $bg-gradient;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
