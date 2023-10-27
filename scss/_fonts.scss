@@ -7,12 +7,14 @@
         src:
             url(fonts/Starguides.eot?#iefix) format("embedded-opentype"),
             url(fonts/Starguides.woff) format("woff"),
-            url(fonts/Starguides.ttf) format("truetype"),
-            url(fonts/Starguides.svg) format("svg");
+            url(fonts/Starguides.woff2) format("woff2"),
+            url(fonts/Starguides.svg) format("svg"),
+            url(fonts/Starguides.ttf) format("truetype");
+
         font-weight: normal;
         font-style: normal;
     }
 }
 
-$font-primary: "Starguides";
+$font-primary: "Starguides", "Delius Unicase", cursive;
 $font-secondary: "Delius Unicase", cursive;

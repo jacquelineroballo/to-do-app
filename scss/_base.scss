@@ -1,11 +1,13 @@
 @import "fonts";
 @import "mixins";
+@import "breakpoints";
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
 
 //Styles
 body {
     background-image: $bg-gradient;
-    min-height: 600px;
+    min-height: 1000px;
+    scroll-behavior: smooth;
 }
 
 #to-do-list {
@@ -27,6 +29,9 @@ body {
     .title {
         font-family: $font-primary;
         font-size: 33px;
+        @include xs {
+            font-size: 22px;
+        }
     }
     .font-input {
         font-family: $font-secondary;
@@ -36,6 +41,9 @@ body {
         font-family: $font-secondary;
         font-size: 26px;
         color: #5f5f5f;
+        @include xs {
+            font-size: 17px;
+        }
     }
 
     .form-control {
@@ -51,6 +59,9 @@ body {
         }
         &::placeholder {
             color: rgb(221, 133, 176);
+        }
+        @include xs {
+            font-size: 10px;
         }
     }
     .list-task {
